@@ -1,0 +1,129 @@
+/* ROOT */
+:root {
+  --primary-bg-color: #4285f4;
+  --text-color: #fff;
+  --transition: .4s all ease;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
+.custom-bg-btn {
+  background: rgba(66, 133, 244, 0.9);
+  transition: var(--transition);
+}
+.custom-bg-btn:hover {
+  background: var(--primary-bg-color);
+  border: 2px solid var(--primary-bg-color);
+  color: var(--text-color);
+  box-shadow: 0 5px 30px -5px rgba(66, 133, 244, 0.7) !important
+}
+.lineHeight {
+  line-height: 1.7;
+}
+#features,
+#communicate-and-feedback,
+#about-us,
+#our-team,
+#contact-us {
+  padding: 80px 0;
+}
+
+/* UNIT FEATURES */
+.unit-4 {
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  transition: var(--transition);
+  position: relative;
+  top: 0;
+  margin-bottom: 4em;
+  padding-top: 50px;
+}
+.unit-4 .unit-4-icon {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  top: -50px;
+}
+.unit-4-icon .icon-wrap {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--primary-bg-color);
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+}
+.unit-4-icon .icon-wrap span {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  color: var(--text-color) !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.unit-4 h3 {
+  font-size: 18px;
+}
+.unit-4 p, .unit-4 h3 {
+  transition: var(--transition);
+}
+.unit-4:hover {
+  background: var(--primary-bg-color);
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  top: -7px;
+}
+.unit-4:hover .icon-wrap {
+  background: var(--text-color);
+}
+.unit-4:hover .icon-wrap span {
+  color: var(--primary-bg-color) !important;
+}
+.unit-4:hover h3, .unit-4:hover p a {
+  color: var(--text-color) !important;
+}
+.unit-4:hover p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+#straight-line {
+  width: 10px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--primary-bg-color);
+}
+
+/* SOCIAL LINKS OUR TEAM */
+.social-links {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 0px;
+  background: var(--primary-bg-color);
+  transition: var(--transition);
+}
+.img-and-accounts:hover .social-links {
+  height: 60px;
+  opacity: 1;
+}
+.social-links i {
+  cursor: pointer;
+}
+.positions p.position {
+  font-size: 12px;
+  letter-spacing: .1em;
+  font-weight: 700;
+  color: var(--primary-bg-color);
+}
+
+/* CONTACT US */
+#contact-us {
+  background-image: url(../images/contactBg.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
