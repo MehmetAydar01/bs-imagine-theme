@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagine Theme</title>
+  <!-- BS ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- BS CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="./animation-on-scroll/aos.css">
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body class="pt-lg-5">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm p-3 z-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand fs-2">imagine<span class="text-primary">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- lg navbar links -->
+      <ul class="navbar-nav d-none d-lg-flex justify-content-end column-gap-4 flex-grow-1">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#features" class="nav-link text-black">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#communicate-and-feedback" class="nav-link text-black">Feedback</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#about-us" class="nav-link btn dropdown-toggle text-black" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#about-us" class="dropdown-item">Our Mission</a></li>
+            <li><a href="#our-team" class="dropdown-item">Our Team</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#contact-us" class="nav-link text-black">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sag taraftan acilan navbar  -->
+    <div class="offcanvas offcanvas-end ps-3 d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 row-gap-sm-2">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active text-primary fs-5" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link fs-5">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#communicate-and-feedback" class="nav-link fs-5">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a href="#collapseLink" class="nav-link fs-5 dropdown-toggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseLink">About Us</a>
+            <ul class="collapse navbar-nav ps-4" id="collapseLink">
+              <li class="nav-item"><a href="#about-us" class="nav-link">Our Mission</a></li>
+              <li class="nav-item"><a href="#our-team" class="nav-link">Our Team</a></li>
+              <li class="nav-item">
+                <a href="#collapseLink2" class="nav-link dropdown-toggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseLink2">More Links</a>
+                <ul class="collapse navbar-nav ps-4" id="collapseLink2">
+                  <li class="nav-item"><a href="#" class="nav-link">Menu One</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Menu Two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-us" class="nav-link fs-5">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="mt-5 pt-2">
+    <div class="container d-none d-lg-block">
+      <div class="row pt-4 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-semibold mb-2">Make Your Business More Profitable</h1>
+          <p class="mb-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+          <button type="button" class="border-0 custom-bg-btn mr-2 mb-2 rounded-5 px-4 py-1">
+            <a href="#" class="btn text-light">Get Started</a>
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <img src="./images/heroImage.svg" class="w-100" alt="hero image" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Small Ekranda hero containerındaki resim ve yazıların yerlerini değiştirmek icin bu şekilde yaptım -->
+    <div class="container d-block d-lg-none pt-3">
+      <div class="row pt-4 align-items-center">
+        <div class="col-12">
+          <img src="./images/heroImage.svg" class="w-100" alt="hero image" loading="lazy">
+        </div>
+        <div class="col-12 mt-3">
+          <h1 class="display-6 fw-semibold mb-2">Make Your Business More Profitable</h1>
+          <p class="mb-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+          <button type="button" class="btn btn-primary mr-2 mb-2 rounded-5 px-3 py-1 text-center">
+            <a href="#" class="btn text-light">Get Started</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-7 m-auto text-center" data-aos="fade-up">
+          <h2 class="text-capitalize fs-1 p-0">imagine features</h2>
+          <p class="mb-5 pb-1 fs-5 text-secondary lineHeight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.</p>
+        </div>
+      </div>
+      <div class="row align-items-stretch justify-content-center">
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-arrow-repeat"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">Marketing Consulting</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-shop"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">Market Analysis</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-basket"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">Easy Purchase</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-arrow-counterclockwise"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">Free Updates</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-emoji-smile"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">100% Satisfied</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+          <div class="unit-4 d-block text-center">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap">
+                <span class="text-primary">
+                  <i class="bi bi-plug-fill"></i>
+                </span>
+              </span>
+            </div>
+            <div>
+              <h3 class="mb-2 fw-normal">Easy Plugin</h3>
+              <p class="text-secondary mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+              <p><a href="#" class="text-primary text-decoration-none">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNICATE AND FEEDBACK -->
+  <section id="communicate-and-feedback">
+    <div class="container">
+      <div class="row pb-lg-5 mb-3">
+        <div class="col-12 col-lg-7">
+          <img src="./images/feedbackImage1.svg" class="w-100" alt="feedback image 1" data-aos="fade-right" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-5 ps-lg-5 mt-md-5 ms-auto">
+          <h2 class="text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-left">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_1.jpg.webp" class="w-75 rounded-circle" alt="person 1">
+                  </div>
+                  <div class="col-10 ms-0">
+                    <strong class="fw-bold">Grey Simpson</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-lg-5 pt-5 mb-3">
+        <div class="col-12 col-lg-5 mt-md-5 ms-auto d-lg-block d-none">
+          <h2 class="text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-right">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_2.jpg.webp" class="w-75 rounded-circle" alt="person 2">
+                  </div>
+                  <div class="col-10 ms-3">
+                    <strong class="fw-bold">Kimberly Gush</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <img src="./images/feedbackImage2.svg" class="w-100" alt="feedback image 2" data-aos="fade-left" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-5 mt-md-5 ms-auto d-lg-none d-block">
+          <h2 class="text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-right">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_2.jpg.webp" class="w-75 rounded-circle" alt="person 2">
+                  </div>
+                  <div class="col-10 ms-3">
+                    <strong class="fw-bold">Kimberly Gush</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-lg-5 pt-5 mb-3">
+        <div class="col-12 col-lg-7">
+          <img src="./images/feedbackImage1.svg" class="w-100" alt="feedback image 1" data-aos="fade-right" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-5 ps-lg-5 mt-md-5 ms-auto">
+          <h2 class="text-capitalize text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-left">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_1.jpg.webp" class="w-75 rounded-circle" alt="person 3">
+                  </div>
+                  <div class="col-10 ms-3">
+                    <strong class="fw-bold">Grey Simpson</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-lg-5 pt-5 mb-3">
+        <div class="col-12 col-lg-5 mt-md-5 ms-auto d-lg-block d-none">
+          <h2 class="text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-right">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_2.jpg.webp" class="w-75 rounded-circle" alt="person 4">
+                  </div>
+                  <div class="col-10 ms-3">
+                    <strong class="fw-bold">Kimberly Gush</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <img src="./images/feedbackImage2.svg" class="w-100" alt="feedback image 2" data-aos="fade-left" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-5 mt-md-5 ms-auto d-lg-none d-block">
+          <h2 class="text-black fs-1 p-0 pb-1 mb-4 mt-3 m-md-0">Communicate and gather feedback</h2>
+          <p class="text-secondary mb-4 lineHeight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
+          <div class="row pt-4" data-aos="fade-right">
+            <div class="col-1">
+              <div id="straight-line"></div>
+            </div>
+            <div class="col-11">
+              <div class="row">
+                <div class="col-11 d-flex mb-4 align-items-center">
+                  <div class="col-2">
+                    <img src="./images/person_2.jpg.webp" class="w-75 rounded-circle" alt="person 4">
+                  </div>
+                  <div class="col-10 ms-3">
+                    <strong class="fw-bold">Kimberly Gush</strong> <br>
+                    <span>Co-Founder, XYZ Inc.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <p class="text-secondary lineHeight">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about-us">
+    <div class="container">
+      <div class="row mb-5">
+        <h2 class="text-center text-black fs-1 p-0 mb-3 fw-semibold">About Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">    
+          <img src="./images/aboutUs.svg" class="w-100" alt="about us" data-aos="fade-right" loading="lazy">
+        </div>
+        <div class="col-12 col-lg-5 ms-lg-5 me-lg-0 ps-lg-5 pe-lg-3">
+          <h3 class="fs-3 fw-semibold mb-4">Our Mission</h3>
+          <p class="text-secondary lineHeight pb-4">
+            Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.
+          </p>
+          <ul class="ul-check mb-5 list-unstyled success">
+            <li class="mb-3 text-secondary"><i class='bi bi-magic me-2 text-success fw-bold'></i> Laborum enim quasi at modi</li>
+            <li class="mb-3 text-secondary"><i class='bi bi-magic me-2 text-success fw-bold'></i> Ad at tempore</li>
+            <li class="mb-3 text-secondary"><i class='bi bi-magic me-2 text-success fw-bold'></i> Labore quaerat esse</li>
+          </ul>
+          <button type="button" class="border-0 custom-bg-btn mr-2 mb-2 rounded-5 px-4 py-1">
+            <a href="#" class="btn text-light">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR TEAM -->
+  <section id="our-team">
+    <div div class="container">
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col-12 col-md-7 m-auto text-center">
+          <h2 class="text-capitalize fs-1 p-0">Our Team</h2>
+          <p class="mb-5 pb-1 fs-5 text-secondary lineHeight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id vero.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-1.jpg.webp" class="w-100" alt="person 1 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">Cloe Marena</h4>
+            <p class="mb-3 position">PRESIDENT</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-2.jpg.webp" class="w-100" alt="person 2 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">John Rooster</h4>
+            <p class="mb-3 position">MARKETING</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-3.jpg.webp" class="w-100" alt="person 3 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">Will Turner</h4>
+            <p class="mb-3 position">MARKETING</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-4.jpg.webp" class="w-100" alt="person 4 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">Nicolas Stainer</h4>
+            <p class="mb-3 position">FINANCING</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-5.jpg.webp" class="w-100" alt="person 5 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">George Brook</h4>
+            <p class="mb-3 position">FOUNDER</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="img-and-accounts w-100 position-relative mb-4">
+            <img src="./images/our-team-6.jpg.webp" class="w-100" alt="person 6 of our team">
+            <div class="social-links">
+              <div id="social-icons" class="d-flex justify-content-center align-items-center h-100 gap-3 text-light">
+                <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2 positions">
+            <h4 class="fw-normal mb-2 fs-6">Emely Hopson</h4>
+            <p class="mb-3 position">MARKETING</p>
+            <p class="text-secondary lineHeight mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US -->
+  <div id="contact-us">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="fs-1 mb-3 text-black fw-semibold">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-7 mb-5">
+          <form class="p-5 bg-dark rounded-3">
+            <h2 class="h4 text-white mb-5">Contact Form</h2>
+            <div class="row form-group">
+              <div class="col-md-6">
+                <label class="text-white-50 mb-3 mt-2" for="fname">First Name</label>
+                <input type="text" id="fname" class="form-control rounded-0">
+              </div>
+              <div class="col-md-6">
+                <label class="text-white-50 mb-3 mt-2" for="lname">Last Name</label>
+                <input type="text" id="lname" class="form-control rounded-0">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-white-50 mb-3 mt-3" for="email">Email</label>
+                <input type="email" id="email" class="form-control rounded-0">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-white-50 mb-3 mt-3" for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control rounded-0">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-white-50 mb-3 mt-3" for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Leave your message here..."></textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <button type="button" class="border-0 custom-bg-btn mb-sm-2 mb-0 rounded-5 mt-3 px-4 py-1">
+                  <a href="#" class="btn text-light">Send Message</a>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="text-center py-5">
+    <div class="container">
+      <div class="row mb-4 pb-2">
+        <div class="col-12">
+          <p class="mb-0">
+            <a href="#" class="p-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="p-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="p-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="p-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="p-3"><i class="bi bi-pinterest"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mb-0 text-secondary">
+            Copyright © 2024 All rights reserved | This template is made with 
+            <i class="bi bi-balloon-heart-fill text-danger" aria-hidden="true"></i> by 
+            <a class="text-decoration-none text-primary" href="https://contentful-myprojects-app.netlify.app/" target="_blank">Mehmet</a> &
+            <a class="text-decoration-none text-primary" href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- Animate JS -->
+  <script src="./animation-on-scroll/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+  </script>
+
+</body>
+</html>
